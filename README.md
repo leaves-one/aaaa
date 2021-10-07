@@ -1,5 +1,5 @@
 # AutoSignIn
-打卡时间：每天的8-19点，每3小时运行一次。  
+打卡时间：每天的9点15分。  
 _Hope everyone always be healthy._
 ## 操作说明
 ### 1、fork 此仓库
