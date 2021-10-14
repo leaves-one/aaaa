@@ -28,8 +28,8 @@ CHROMEDRIVER_PATH = '/usr/bin/chromedriver'
 
 # 基本个人信息
 url = 'https://xmuxg.xmu.edu.cn/platform'  # 登录的网站
-user_email='2576002875@qq.com'#(可选)发送的邮件方 我这里用的一个小号
-password_email='ozsydzmhxuzddjhf'#（可选）邮件密码不是qq密码 而是需要到自己的邮箱设置的密码 具体可以百度怎么自动发送邮件
+user_email='971169103@qq.com'#(可选)发送的邮件方 我这里用的一个小号
+password_email='hcwxdcjvgubxbddf'#（可选）邮件密码不是qq密码 而是需要到自己的邮箱设置的密码 具体可以百度怎么自动发送邮件
 email_reciver=MAILBOX
 User = StuID  
 passwords = PW 
