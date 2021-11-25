@@ -17,7 +17,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 
-time.sleep(random.randint(20,200))
+
 # 系统变量
 StuID = os.environ['STUID']
 PW = os.environ['PW']
@@ -34,7 +34,7 @@ email_reciver=MAILBOX
 User = StuID  
 passwords = PW 
 options = webdriver.ChromeOptions()
-# options.add_argument('headless')
+options.add_argument('headless')
 driver = webdriver.Chrome(CHROMEDRIVER_PATH, options=options)
 # driver = webdriver.Chrome(CHROMEDRIVER_PATH)
 wait = WebDriverWait(driver, 5)  # 每次都进行显示等待，设立最大等待时间为5s，5s内不断检验如果为True则通过
