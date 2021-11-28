@@ -17,7 +17,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 
-time.sleep(random.randint(20,200))
+
 # 系统变量
 StuID = os.environ['STUID']
 PW = os.environ['PW']
