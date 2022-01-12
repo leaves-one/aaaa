@@ -103,7 +103,8 @@ def log_system(driver):
     driver.switch_to.window(BrownserControl[-1])  
 
     xpath_Health = '//*[@id="mainM"]/div/div/div/div[1]/div[2]/div/div[3]/div[2]'
-    wait.until(EC.presence_of_element_located((By.XPATH, xpath_Health))) 
+    time.sleep(2)
+#     wait.until(EC.presence_of_element_located((By.XPATH, xpath_Health))) 
     My_Health = driver.find_element_by_xpath(xpath_Health)
     return My_Health
 
