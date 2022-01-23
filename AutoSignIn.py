@@ -48,7 +48,8 @@ def get_web(driver):
 
     # 等一下，等数据全部加载出来了再点击
     xpath_find_log_in = '//*[@id="loginLayout"]/div[3]/div[2]/div/button[3]'  # xpath 定位
-    wait.until(EC.presence_of_element_located((By.XPATH, xpath_find_log_in)))  # 等到有这个元素加载出现的时候再开始
+    # wait.until(EC.presence_of_element_located((By.XPATH, xpath_find_log_in)))  # 等到有这个元素加载出现的时候再开始
+    time.sleep(3)
     tong_yi = driver.find_element_by_xpath(xpath_find_log_in)  # 找到的元素为“统一身份登录”
     return tong_yi
     time.sleep(3)
@@ -113,7 +114,8 @@ def log_day(driver):
     BrownserControl = driver.window_handles 
     driver.switch_to.window(BrownserControl[-2])  
     xpath_day='/html/body/div[1]/div/div/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/i'
-    wait.until(EC.presence_of_element_located((By.XPATH, xpath_day))) 
+    time.sleep(2)
+    # wait.until(EC.presence_of_element_located((By.XPATH, xpath_day))) 
     driver.find_element_by_xpath(xpath_day).click()
 
     print('正在尝试进入统计打卡系统...')
