@@ -45,7 +45,9 @@ wait = WebDriverWait(driver, 5)  # 每次都进行显示等待，设立最大等
 def get_web(driver):
     driver.get(url)
     print('正在打开网页....')
-
+    time.sleep(2)
+    driver.refresh()
+    time.sleep(2)
     # 等一下，等数据全部加载出来了再点击
     xpath_find_log_in = '//*[@id="loginLayout"]/div[3]/div[2]/div/button[3]'  # xpath 定位
     # wait.until(EC.presence_of_element_located((By.XPATH, xpath_find_log_in)))  # 等到有这个元素加载出现的时候再开始
